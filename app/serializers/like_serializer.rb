@@ -1,4 +1,4 @@
 class LikeSerializer < ActiveModel::Serializer
   attributes :id, :count
-  has_one :product
+  belongs_to :product
 end
