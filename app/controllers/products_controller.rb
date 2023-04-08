@@ -1,9 +1,9 @@
 class ProductsController < ApplicationController
-    skip_before_action :authorize
+    skip_before_action :authorized
 
     def index
         @products = Product.all
-        render json: @products , include: :reviews ,:
+        render json: @products 
     end
 
 
