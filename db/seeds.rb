@@ -9,40 +9,40 @@ user = User.create(username:"trance" , password:"123" , email:"trance@gmail.com"
 
 products = Product.create([
     {
-        name: "Earphones",
-        image:"https://res.cloudinary.com/dakiak4mc/image/upload/v1678951961/opn-50d_680_-12_oieprj.jpg",
-        description: "Earphones",
-        price: 100
+        name: "TAUPE HAZE",
+        image:"https://myretrobucket.s3.eu-north-1.amazonaws.com/1.png",
+        description: "AIR JORDAN 4 TAUPE HAZE",
+        price: 105
     },
     {
-        name: "Electric Jug",
-        image: "https://res.cloudinary.com/dakiak4mc/image/upload/v1678951961/oh-k20-680-1_up57pw.jpg",
-        description: "Electric Jug",
-        price: 200
+        name: "NRG LEVI DENIM",
+        image: "https://myretrobucket.s3.eu-north-1.amazonaws.com/2.png",
+        description: "AIR JORDAN 4 NRG LEVI DENIM",
+        price: 105
     },
     {
-        name:"Headphones",
-        image:"https://res.cloudinary.com/dakiak4mc/image/upload/v1678947997/opn-40d_1_ppw1sw.jpg",
-        description:"raimo OpenCirclet IPX5 Ergonomic Secure Fit Long Playtime Open-ear Bluetooth Headphones",
-        price: 300
+        name:"LEVIS BLACK",
+        image:"https://myretrobucket.s3.eu-north-1.amazonaws.com/3.png",
+        description:"AIR JORDAN 4 X LEVIS BLACK",
+        price: 129
     },
     {
-        image:"https://res.cloudinary.com/dakiak4mc/image/upload/v1678947997/20230106-175743_au0zvr.jpg",
-        name:"SmartShaver ",
-        description:"2 Dual Ultra-thin Rotary Electric Shaver",
-        price: 400
+        image:"https://myretrobucket.s3.eu-north-1.amazonaws.com/4.png",
+        name:" KAWS GRAY COOL",
+        description:"AIR JORDAN 4 X KAWS GRAY COOL",
+        price: 129
     },
     {
-        image:"https://res.cloudinary.com/dakiak4mc/image/upload/v1678947997/osv-102_-680-11_qwvdo8.jpg",
-        name:"Oraimo UltraCleaner ",
-        description:"oraimo UltraCleaner S Cordless Self-Standing Powerful Suction Advanced Filtration Stick Vacuum Cleaner",
-        price: 500
+        image:"https://myretrobucket.s3.eu-north-1.amazonaws.com/5.png",
+        name:"BLACK CAT ",
+        description:"AIR JORDAN 4 BLACK CAT",
+        price: 105
     },
     {
-        name:"Triple Head Charger",
-        image:"https://res.cloudinary.com/dakiak4mc/image/upload/v1678947996/_6_1_xjyc4h.jpg",
-        description:"Triple Head Charger",
-        price: 600
+        name:"OG WHITE CEMENT",
+        image:"https://myretrobucket.s3.eu-north-1.amazonaws.com/6.png",
+        description:"AIR JORDAN 4 OG WHITE CEMENT",
+        price: 110
     }
 
 ])
