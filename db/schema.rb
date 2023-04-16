@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_07_171915) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_16_140340) do
+  create_table "bookings", force: :cascade do |t|
+    t.string "location"
+    t.string "phone_number"
+    t.integer "product_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_bookings_on_product_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
   create_table "likes", force: :cascade do |t|
     t.integer "count"
     t.integer "product_id", null: false
@@ -56,6 +67,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_07_171915) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "bookings", "products"
+  add_foreign_key "bookings", "users"
   add_foreign_key "likes", "products"
   add_foreign_key "orders", "products"
   add_foreign_key "orders", "users"

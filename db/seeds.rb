@@ -141,3 +141,25 @@ likes = Like.create([
         product_id: 6
     }
 ])
+
+
+bookings = Booking.create([
+    {
+        user_id: 1,
+        product_id: 1,
+        location: "Stockholm",
+        phone_number: "0701234567"
+
+    },
+    {
+        user_id: 1,
+        product_id: 2,
+        location: "Stockholm",
+        phone_number: "0701234567"
+
+    
+    }
+])
+
+
+    
