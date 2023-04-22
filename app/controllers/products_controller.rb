@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
     skip_before_action :authorized
+    rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
     def index
         @products = Product.all
@@ -8,8 +9,9 @@ class ProductsController < ApplicationController
 
 
     def show
-        @product = Product.find(params[:id])
+        @product = find_record(params[:id])
         render json: @product
+
     end
 
     def create
@@ -37,6 +39,15 @@ class ProductsController < ApplicationController
     end
 
     private
+    def find_record(id)
+        Product.find(id)
+      rescue ActiveRecord::RecordNotFound
+        raise ApiError.new("Record not found")
+      end
+      
+      def record_not_found
+        render json: { error: "Record not found" }, status: :not_found
+      end
         def product_params
             params.require(:product).permit(:name, :description, :price, :image)
         end
