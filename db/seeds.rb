@@ -5,7 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-user = User.create(username:"trance" , password:"123" , email:"trance@gmail.com")
+
+puts "Seed started"
+user = User.create(username:"trance" , password:"123456" , email:"trance@gmail.com")
+
+admin = User.create(username:"admin" , password:"123456" , email:"admin@gmail.com" , role:"admin")
 
 products = Product.create([
     {
